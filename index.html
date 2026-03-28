@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orfield Laboratories — The Quietest Place on Earth</title>
+  <meta name="description" content="Independent multi-sensory design research and consulting laboratory. Acoustics, lighting, thermal comfort. Minneapolis, MN. Since 1971.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient floating light orbs -->
+  <div class="ambient-orbs" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--1"></div>
+    <div class="ambient-orb ambient-orb--2"></div>
+    <div class="ambient-orb ambient-orb--3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="images/logo.svg" alt="Orfield Laboratories" class="logo-img">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="hero-glow hero-glow--3"></div>
+      <div class="wave-grid" id="waveGrid"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">Est. 1971 — Minneapolis, MN</p>
+      <h1 class="hero-title">
+        <span class="hero-line">The Quietest</span>
+        <span class="hero-line">Place on</span>
+        <span class="hero-line accent">Earth</span>
+      </h1>
+      <p class="hero-sub">Design &middot; Research &middot; Testing &middot; Silence</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" data-target="53">0</span>
+          <span class="stat-label">Years of Research</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">-24.9</span>
+          <span class="stat-label">dBA Anechoic</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">15K</span>
+          <span class="stat-label">Sq Ft Facility</span>
+        </div>
+      </div>
+      <a href="#about" class="hero-arrow" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">An independent, multi-sensory<br>design research laboratory</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">Orfield Laboratories is a perceptually-based research and consulting laboratory serving North American and international clients in human comfort research, architecture, design services, and product development testing.</p>
+          <p>Operating since 1971, the lab houses the Guinness World Record-holding anechoic chamber — the quietest place on earth at -24.9 dBA. The facility spans 15,000 square feet of multi-sensory testing environments in Minneapolis, Minnesota.</p>
+          <p>The lab is a Federal, NVLAP NIST-Accredited Acoustic Lab (Lab Code 200248), providing objective and subjective measurement services across acoustics, lighting, thermal comfort, and indoor air quality.</p>
+        </div>
+        <div class="about-images">
+          <div class="img-stack">
+            <img src="images/about-building.jpg" alt="Orfield Labs building exterior" class="reveal" loading="lazy">
+            <img src="images/about-sound80.jpg" alt="Sound 80 Studios, 1973" class="reveal" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Acoustics</span><span class="dot">●</span>
+      <span>Lighting</span><span class="dot">●</span>
+      <span>Daylighting</span><span class="dot">●</span>
+      <span>Thermal Comfort</span><span class="dot">●</span>
+      <span>Indoor Air Quality</span><span class="dot">●</span>
+      <span>Audio-Visual</span><span class="dot">●</span>
+      <span>Sound Quality</span><span class="dot">●</span>
+      <span>Universal Design</span><span class="dot">●</span>
+      <span>Acoustics</span><span class="dot">●</span>
+      <span>Lighting</span><span class="dot">●</span>
+      <span>Daylighting</span><span class="dot">●</span>
+      <span>Thermal Comfort</span><span class="dot">●</span>
+      <span>Indoor Air Quality</span><span class="dot">●</span>
+      <span>Audio-Visual</span><span class="dot">●</span>
+      <span>Sound Quality</span><span class="dot">●</span>
+      <span>Universal Design</span><span class="dot">●</span>
+    </div>
+  </div>
+
+  <!-- Services (Testing + Products) -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Services</span>
+        <h2 class="section-title">Testing &amp; Product Development</h2>
+      </div>
+      <p class="section-intro">Full perceptually-based testing in acoustics, audio-visual systems, lighting, daylighting, vision, thermal comfort, and indoor air quality. Comfort, performance, and preference — measured.</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <img src="images/test-acoustic.jpg" alt="Acoustic testing equipment" loading="lazy">
+          <div class="service-body">
+            <h3>Acoustic Testing</h3>
+            <p>Sound intensity, acoustic holography, and sound quality measurement. NVLAP NIST-accredited since the 1970s. Home of the Sound Quality Working Group (SQWG).</p>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <img src="images/test-lighting.png" alt="Lighting testing lab" loading="lazy">
+          <div class="service-body">
+            <h3>Lighting &amp; Vision</h3>
+            <p>Visual performance testing, daylighting analysis, and lighting simulation for optimal human perception and cognitive comfort in built environments.</p>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <img src="images/test-thermal.png" alt="Thermal comfort testing" loading="lazy">
+          <div class="service-body">
+            <h3>Thermal &amp; Air Quality</h3>
+            <p>Indoor air quality assessment and thermal comfort evaluation using perceptual and cognitive comfort standards for building performance.</p>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <img src="images/products-main.jpg" alt="Product development at Orfield Labs" loading="lazy">
+          <div class="service-body">
+            <h3>Product Development</h3>
+            <p>Design, research, and testing for appliances, vehicles, audio-visual systems, medical devices, aircraft, tools, and consumer electronics. Human perception at the core.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Labs -->
+  <section class="section" id="labs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Facilities</span>
+        <h2 class="section-title">The Labs</h2>
+      </div>
+      <p class="section-intro">15,000 sq. ft. outfitted with multi-sensory facilities for research, testing, corporate events, and demonstrations.</p>
+      <div class="labs-grid">
+        <div class="lab-card lab-card--featured reveal">
+          <img src="images/labs-anechoic.jpg" alt="Anechoic Chamber" loading="lazy">
+          <div class="lab-overlay">
+            <h3>Anechoic Chamber</h3>
+            <p>The quietest place on earth. -24.9 dBA. Guinness World Record holder.</p>
+          </div>
+        </div>
+        <div class="lab-card reveal">
+          <img src="images/labs-reverb.jpg" alt="Reverberation Chamber" loading="lazy">
+          <div class="lab-overlay">
+            <h3>Reverberation Chamber</h3>
+          </div>
+        </div>
+        <div class="lab-card reveal">
+          <img src="images/labs-simulation.jpg" alt="Acoustic Simulation Lab" loading="lazy">
+          <div class="lab-overlay">
+            <h3>Acoustic Simulation Lab</h3>
+          </div>
+        </div>
+        <div class="lab-card reveal">
+          <img src="images/labs-lighting.jpg" alt="Lighting Simulation Lab" loading="lazy">
+          <div class="lab-overlay">
+            <h3>Lighting Simulation Lab</h3>
+          </div>
+        </div>
+        <div class="lab-card reveal">
+          <img src="images/labs-facade.jpg" alt="Lab Facade" loading="lazy">
+          <div class="lab-overlay">
+            <h3>Lab Facade</h3>
+          </div>
+        </div>
+        <div class="lab-card reveal">
+          <img src="images/labs-auditorium.jpg" alt="Studio 1 Auditorium" loading="lazy">
+          <div class="lab-overlay">
+            <h3>Studio 1 — Auditorium</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section class="section section--alt" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Research</span>
+        <h2 class="section-title">Research &amp; Consulting</h2>
+      </div>
+      <div class="research-grid">
+        <div class="research-card reveal">
+          <div class="research-img">
+            <img src="images/research-arch.jpg" alt="Architectural research" loading="lazy">
+          </div>
+          <div class="research-body">
+            <h3>Architecture</h3>
+            <p>The only multi-disciplinary building performance consulting practice in the country — acoustics, lighting, daylighting, thermal comfort, indoor air quality, and audio-visual design under one roof.</p>
+          </div>
+        </div>
+        <div class="research-card reveal">
+          <div class="research-img">
+            <img src="images/research-product.jpg" alt="Product development research" loading="lazy">
+          </div>
+          <div class="research-body">
+            <h3>Product Development</h3>
+            <p>Consulting across appliances, vehicles, AV systems, medical devices, and consumer electronics. Founded the Sound Quality Working Group in 1991, hosting over 20 international conferences.</p>
+          </div>
+        </div>
+        <div class="research-card reveal">
+          <div class="research-img">
+            <img src="images/research-demos.jpg" alt="Demonstrations and events" loading="lazy">
+          </div>
+          <div class="research-body">
+            <h3>Demonstrations</h3>
+            <p>Annual training seminars for Fortune 500 companies. Live demonstrations of acoustical phenomena, sound quality assessment, and perceptual research methodologies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Architecture</span>
+        <h2 class="section-title">Architectural Consulting</h2>
+      </div>
+      <p class="section-intro">Multi-sensory design consultation across acoustics, AV, lighting, daylighting, thermal comfort, and indoor air quality. Specializing in perceptual and cognitive disabilities, universal design, and occupancy comfort.</p>
+      <div class="arch-grid">
+        <div class="arch-card reveal">
+          <img src="images/arch-office.jpg" alt="Office and corporate architecture" loading="lazy">
+          <span class="arch-label">Office / Corporate</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-healthcare.jpg" alt="Healthcare architecture" loading="lazy">
+          <span class="arch-label">Healthcare</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-disabilities.jpg" alt="Universal design for invisible disabilities" loading="lazy">
+          <span class="arch-label">Universal Design</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-spiritual.jpg" alt="Spiritual architecture" loading="lazy">
+          <span class="arch-label">Spiritual</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-government.jpg" alt="Government architecture" loading="lazy">
+          <span class="arch-label">Government</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-arts.jpg" alt="Arts and culture architecture" loading="lazy">
+          <span class="arch-label">Arts &amp; Culture</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-landscape.jpg" alt="Therapeutic landscape" loading="lazy">
+          <span class="arch-label">Therapeutic Landscape</span>
+        </div>
+        <div class="arch-card reveal">
+          <img src="images/arch-homes.jpg" alt="Residential architecture" loading="lazy">
+          <span class="arch-label">Residential</span>
+        </div>
+      </div>
+      <div class="arch-specialties">
+        <h3>Areas of Expertise</h3>
+        <div class="specialty-tags">
+          <span>Aging</span><span>Autism</span><span>Mental Health</span><span>PTSD</span>
+          <span>Sensory Processing</span><span>ADHD</span><span>Deafness</span><span>Blindness</span>
+          <span>Education</span><span>Hospitality</span><span>Performing Arts</span><span>Sports</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Art Gallery -->
+  <section class="section section--alt" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Gallery</span>
+        <h2 class="section-title">Orfield Gallery</h2>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gallery-item reveal">
+          <img src="images/art-beam-dissolve.jpeg" alt="Carl Beam — Big Dissolve, 2001" loading="lazy">
+          <div class="gallery-caption">Carl Beam — Big Dissolve, 2001</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-beam-mystery.jpg" alt="Carl Beam — Mystery, 2002" loading="lazy">
+          <div class="gallery-caption">Carl Beam — Mystery, 2002</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-beam-space.jpeg" alt="Carl Beam — Whose Space is It?, 2001" loading="lazy">
+          <div class="gallery-caption">Carl Beam — Whose Space is It?, 2001</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-beam-imagine.jpeg" alt="Carl Beam — Imagine, 2002" loading="lazy">
+          <div class="gallery-caption">Carl Beam — Imagine, 2002</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-whitehorse.jpg" alt="Emmi Whitehorse" loading="lazy">
+          <div class="gallery-caption">Emmi Whitehorse</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-donovan-1.jpg" alt="Simon Donovan" loading="lazy">
+          <div class="gallery-caption">Simon Donovan</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-shelton-sea.jpg" alt="Doug Shelton — The Sea Was Calling" loading="lazy">
+          <div class="gallery-caption">Doug Shelton — The Sea Was Calling</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-shelton-smoke.jpg" alt="Doug Shelton — Smoke Dreams" loading="lazy">
+          <div class="gallery-caption">Doug Shelton — Smoke Dreams</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-beam-delta.png" alt="Anong Beam — Delta" loading="lazy">
+          <div class="gallery-caption">Anong Beam — Delta</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-silence-violence.jpg" alt="Silence is Violence" loading="lazy">
+          <div class="gallery-caption">Silence is Violence</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-donovan-2.jpg" alt="Simon Donovan" loading="lazy">
+          <div class="gallery-caption">Simon Donovan</div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/art-gallery-1.jpg" alt="Gallery installation view" loading="lazy">
+          <div class="gallery-caption">Gallery Installation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section class="section" id="visit">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Visit</span>
+        <h2 class="section-title">Experience the Silence</h2>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-content">
+          <p class="lead">Orfield Labs welcomes visitors for personal and professional experiences — corporate events and retreats, facility tours, silent sessions in the anechoic chamber, and sensory consultations.</p>
+          <p>Accessible by appointment, the labs and studios are available for full buyouts or individual rentals designed to accommodate your needs.</p>
+          <div class="visit-offerings">
+            <div class="offering">
+              <h4>Silent Sessions</h4>
+              <p>Experience absolute silence in the world's quietest room</p>
+            </div>
+            <div class="offering">
+              <h4>Corporate Events</h4>
+              <p>Retreats, team-building, and demonstrations in a unique space</p>
+            </div>
+            <div class="offering">
+              <h4>Facility Tours</h4>
+              <p>Small and large group tours of all laboratory facilities</p>
+            </div>
+            <div class="offering">
+              <h4>Consultations</h4>
+              <p>Sensory and cognitive consultations with expert researchers</p>
+            </div>
+          </div>
+        </div>
+        <div class="visit-image">
+          <img src="images/about-anechoic.jpg" alt="Inside the anechoic chamber" class="reveal" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">08 — Contact</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-block">
+            <h4>Address</h4>
+            <p>2709 East 25th Street<br>Minneapolis, MN 55406</p>
+          </div>
+          <div class="contact-block">
+            <h4>Phone</h4>
+            <p><a href="tel:+16127212455">1-612-721-2455</a></p>
+          </div>
+          <div class="contact-block">
+            <h4>Email</h4>
+            <p><a href="mailto:info@orfieldlabs.com">info@orfieldlabs.com</a></p>
+          </div>
+        </div>
+        <div class="contact-map">
+          <div class="map-placeholder">
+            <span class="map-pin">&#9679;</span>
+            <span>Minneapolis, MN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Orfield Laboratories" class="footer-logo">
+        <p>&copy; 2024 Orfield Laboratories, Inc.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="history.html">History</a>
+        <a href="#services">Services</a>
+        <a href="#labs">Labs</a>
+        <a href="#research">Research</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* ============================================
+   History Page — Styles
+   ============================================ */
+
+/* Hero */
+.history-hero {
+  position: relative; min-height: 70vh; display: flex;
+  align-items: flex-end; justify-content: center;
+  background: var(--bg); overflow: hidden;
+  padding-bottom: 80px;
+}
+.history-hero-content {
+  position: relative; z-index: 1; text-align: center;
+  padding: calc(var(--nav-h) + 80px) 24px 0;
+  max-width: 800px;
+}
+.history-hero-title {
+  font-family: var(--font-display); font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 700; line-height: 1.08; color: var(--text);
+  margin-bottom: 24px;
+}
+.history-hero-sub {
+  font-size: 1.15rem; color: var(--text-light); line-height: 1.8;
+  max-width: 600px; margin: 0 auto;
+}
+
+/* History blocks — alternating image/text */
+.history-block {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: start;
+}
+.history-block--reverse { direction: rtl; }
+.history-block--reverse > * { direction: ltr; }
+
+.history-block-text p { margin-bottom: 20px; color: var(--text-light); }
+.history-block-text .lead { font-size: 1.15rem; color: var(--text); line-height: 1.8; }
+
+.history-block-img { position: relative; }
+.history-block-img img { border-radius: var(--radius-lg); width: 100%; }
+.img-caption {
+  display: block; margin-top: 12px;
+  font-family: var(--font-mono); font-size: 0.75rem;
+  color: var(--text-muted); letter-spacing: 0.03em;
+}
+
+/* Highlight blocks (Sound 80 stories) */
+.history-highlight {
+  margin: 28px 0;
+  padding: 24px 28px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.history-highlight h3 {
+  font-family: var(--font-display); font-size: 1.1rem;
+  font-weight: 600; color: var(--accent-light); margin-bottom: 8px;
+}
+.history-highlight p {
+  margin-bottom: 0; font-size: 0.95rem; color: var(--text-light); line-height: 1.7;
+}
+
+/* Records timeline (anechoic) */
+.records-timeline {
+  margin-top: 80px; text-align: center;
+}
+.records-timeline h3 {
+  font-family: var(--font-display); font-size: 1.5rem;
+  font-weight: 600; margin-bottom: 40px;
+}
+.record-steps {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+}
+.record {
+  padding: 32px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.record:hover {
+  border-color: rgba(200,148,74,0.3);
+  box-shadow: 0 4px 24px var(--accent-glow);
+}
+.record-year {
+  display: block; font-family: var(--font-mono); font-size: 0.75rem;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.record-value {
+  display: block; font-family: var(--font-display); font-size: 1.8rem;
+  font-weight: 700; color: var(--text); margin-bottom: 6px;
+}
+.record-note {
+  font-size: 0.85rem; color: var(--text-muted);
+}
+
+/* Clients grid */
+.clients-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px; margin-bottom: 32px;
+}
+.client-card {
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.client-card:hover {
+  border-color: rgba(200,148,74,0.25);
+  box-shadow: 0 4px 24px var(--accent-glow);
+}
+.client-card h4 {
+  font-family: var(--font-display); font-size: 1.15rem;
+  font-weight: 600; color: var(--accent-light); margin-bottom: 10px;
+}
+.client-card p {
+  font-size: 0.9rem; color: var(--text-light); line-height: 1.7;
+}
+.clients-also {
+  text-align: center; padding-top: 16px;
+}
+.clients-also p {
+  font-size: 0.9rem; color: var(--text-muted); max-width: 700px;
+  margin: 0 auto; line-height: 1.7;
+}
+
+/* Media grid */
+.media-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+}
+.media-item {
+  padding: 24px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+.media-item:hover { border-color: rgba(200,148,74,0.25); }
+.media-outlet {
+  display: block; font-family: var(--font-mono); font-size: 0.7rem;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.media-title {
+  font-size: 1rem; color: var(--text-light); line-height: 1.5;
+}
+
+/* Timeline */
+.timeline { max-width: 700px; margin: 48px auto 0; position: relative; }
+.timeline::before {
+  content: ''; position: absolute; left: 76px; top: 0; bottom: 0;
+  width: 1px; background: var(--border-light);
+}
+.tl-item {
+  display: flex; align-items: baseline; gap: 24px;
+  padding: 16px 0; position: relative;
+}
+.tl-item::before {
+  content: ''; position: absolute; left: 72px; top: 24px;
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--accent); border: 2px solid var(--bg);
+  z-index: 1;
+}
+.tl-year {
+  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700;
+  color: var(--accent-light); min-width: 52px; text-align: right;
+}
+.tl-text {
+  font-size: 0.95rem; color: var(--text-light); line-height: 1.6;
+  padding-left: 24px;
+}
+
+/* Active nav link */
+.nav-links a.active { color: var(--accent-light); }
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+  .record-steps { grid-template-columns: repeat(2, 1fr); }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .history-block,
+  .history-block--reverse {
+    grid-template-columns: 1fr; gap: 40px;
+    direction: ltr;
+  }
+  .record-steps { grid-template-columns: 1fr 1fr; }
+  .clients-grid { grid-template-columns: 1fr; }
+  .media-grid { grid-template-columns: 1fr; }
+  .history-hero { min-height: 60vh; padding-bottom: 60px; }
+  .history-hero-content { padding-top: calc(var(--nav-h) + 48px); }
+
+  .timeline::before { left: 60px; }
+  .tl-item::before { left: 56px; }
+  .tl-year { min-width: 40px; font-size: 0.75rem; }
+}
+
+@media (max-width: 480px) {
+  .record-steps { grid-template-columns: 1fr; }
+}

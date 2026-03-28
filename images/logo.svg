@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="o-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c0b8b0"/>
+      <stop offset="50%" stop-color="#a8a098"/>
+      <stop offset="100%" stop-color="#bab2aa"/>
+    </linearGradient>
+    <filter id="o-shadow" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  <!-- Outer O shape -->
+  <path d="M100,10 C149.7,10 190,50.3 190,100 C190,149.7 149.7,190 100,190 C50.3,190 10,149.7 10,100 C10,50.3 50.3,10 100,10 Z M100,50 C72.4,50 50,72.4 50,100 C50,127.6 72.4,150 100,150 C127.6,150 150,127.6 150,100 C150,72.4 127.6,50 100,50 Z"
+    fill="url(#o-fill)" fill-rule="evenodd" filter="url(#o-shadow)"/>
+</svg>
