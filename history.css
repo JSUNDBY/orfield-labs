@@ -68,7 +68,7 @@
   font-weight: 600; margin-bottom: 40px;
 }
 .record-steps {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
 }
 .record {
   padding: 32px 24px;
@@ -170,6 +170,19 @@
 .tl-text {
   font-size: 0.95rem; color: var(--text-light); line-height: 1.6;
   padding-left: 24px;
+}
+
+/* History subheadings */
+.history-heading {
+  font-family: var(--font-display); font-size: 1.6rem;
+  font-weight: 700; margin-bottom: 20px; color: var(--text);
+}
+.history-quote {
+  font-family: var(--font-display); font-size: 1.1rem;
+  font-style: italic; color: var(--accent-light);
+  border-left: 2px solid var(--accent);
+  padding-left: 20px; margin: 24px 0;
+  line-height: 1.8;
 }
 
 /* Active nav link */
